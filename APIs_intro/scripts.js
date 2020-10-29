@@ -44,4 +44,4 @@ function getReq(){
   }
 }
 
-console.log(getReq())
+ 

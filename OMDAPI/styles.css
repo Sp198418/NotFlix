@@ -1,44 +1,80 @@
+
+/* Background of page  */
+
 body{
     background-image: url('https://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg');
+    background-attachment: fixed;
     align-items: center;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    
-    
+    color: red;
+    overflow-x: scroll;
+}
+::-webkit-scrollbar {
+width: 5px;
+height: 10px;
+} 
+
+::-webkit-scrollbar-track {
+background: #1e1e24;
+height: 5px;
+width: 10px;
+} 
+::-webkit-scrollbar-thumb{
+    background:red;
+    width: 10px;
+    height: 5px;
+}
+
+
+
+
+/* Header */
+h1{
+    color: red;
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
 }
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 400px;
+    height: 400px;
     width: 270px;
-    border: 1px solid orchid;
+    border: 1px solid black;
     border-radius: 10px;
     box-shadow: 2px 8px 10px 4px red;
     margin: 10px;
     padding: 10px;
+    background: rgba(92, 86, 86, 0.644)
+    
 }
-h1{
-    color: red;
-}
+
 
 #container{
+    display: flex;
+    flex-direction: row;
     margin-top:20px;
     padding:20px 40px;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
+    background: transparent;
+    font-size: large;
+    font-weight: bolder; 
 }
 
-img{
-    max-width: 270px;
-    min-height: 400px;
+.poster{
+    background-image: url(https://www.showplacerents.com/img/image-placeholder.png);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    min-height: 300px;
+    
 }
 
-img:hover{
+.card:hover{
     box-shadow: 5px 5px 8px 8px white;
     cursor: pointer;
     transition: all .03s

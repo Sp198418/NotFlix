@@ -5,7 +5,7 @@ let page = 1;
 
 
   function search(finder){
-      let url = `http://www.omdbapi.com/?apikey=9f075407&s=${finder}&page=${page}`
+      let url = `https://www.omdbapi.com/?apikey=9f075407&s=${finder}&page=${page}`
       
       container.innerHTML= ''// location where card is be filled with information 
     // fetches the data from websites api 
